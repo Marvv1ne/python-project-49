@@ -1,3 +1,5 @@
+full-install: install build publish package-install
+
 install:
 	poetry install
 build:
