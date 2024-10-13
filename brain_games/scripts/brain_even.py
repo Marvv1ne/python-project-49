@@ -1,5 +1,6 @@
 import prompt
 from random import randint
+from ..cli import welcome_user
 
 
 def is_even(number: int) -> bool:
@@ -9,6 +10,7 @@ def is_even(number: int) -> bool:
 
 def main() -> str:
     number = randint(0, 100)
+    welcome_user()
     print('Answer "yes" if  number is even, otherwise answer "no".')
     print(f"Question: {number}")
     answer = prompt.string("Your answer: ")

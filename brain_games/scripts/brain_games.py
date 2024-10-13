@@ -2,8 +2,7 @@
 from ..cli import welcome_user
 
 
-def main():
-    print("Welcome to the Brain Games")
+def main():    
     welcome_user()
 
 
