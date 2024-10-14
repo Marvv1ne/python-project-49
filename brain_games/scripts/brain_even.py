@@ -14,10 +14,10 @@ def main() -> str:
     welcome_user(NAME)
     print('Answer "yes" if  number is even, otherwise answer "no".')
     while counter_of_correct_answers < 3:
-        number = randint(0, 100)        
+        number = randint(0, 100)
         print(f"Question: {number}")
         answer = prompt.string("Your answer: ")
-        if ((is_even(number) and answer == 'yes') or 
+        if ((is_even(number) and answer == 'yes') or
             (not is_even(number) and answer == 'no')):
             print(f"Your answer: '{'yes' if is_even(number) else 'no'}'")
             print('Correct!')
