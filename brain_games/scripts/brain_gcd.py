@@ -1,4 +1,3 @@
-from random import randint
 from ..game_logic import game_start
 from .games.gcd_game import find_gcd
 
