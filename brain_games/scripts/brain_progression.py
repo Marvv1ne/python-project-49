@@ -1,5 +1,5 @@
 from ..game_logic import game_start
-from .games.prograssion_game import find_lost_element
+from ..games.prograssion_game import find_lost_element
 
 
 def main() -> str:
