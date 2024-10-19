@@ -1,5 +1,5 @@
 from ..game_logic import game_start
-from .games.calc_game import calc
+from ..games.calc_game import calc
 
 
 def main():

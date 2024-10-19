@@ -1,5 +1,5 @@
 from ..game_logic import game_start
-from .games.gcd_game import find_gcd
+from ..games.gcd_game import find_gcd
 
 def main() -> str:
     question = "Find the greatest common divisor of given numbers."

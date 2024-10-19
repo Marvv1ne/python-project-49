@@ -1,5 +1,5 @@
 from ..game_logic import game_start
-from .games.is_even_game import is_even
+from ..games.is_even_game import is_even
 
 
 def main() -> str:
