@@ -1,7 +1,8 @@
 from random import randint
+from typing import Tuple
 
 
-def find_gcd() -> int:
+def find_gcd() -> Tuple[str, int]:
     """function finds the greatest common divisor of two numbers."""
     first_number = randint(1, 100)
     second_number = randint(1, 100)

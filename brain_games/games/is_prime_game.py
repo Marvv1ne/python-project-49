@@ -1,7 +1,8 @@
 from random import randint
+from typing import Tuple
 
-def is_prime() -> str:
-    """function return 'yes' if number is even or return 'no'"""
+def is_prime() -> Tuple[int, str]:
+    """function return 'yes' if number is prime or return 'no'"""
     number = randint(0, 100)
     if number <= 1:
         return number, "no"

@@ -1,7 +1,10 @@
 from random import randint, choice
+from typing import Tuple
 
-def calc() -> str:
-    """here must be docstring of function"""
+
+def calc() -> Tuple[str, int]:
+    """This function create random expression and
+        return this expression and answer"""
     first_number = randint(0, 100)
     second_number = randint(0, 100)
     operator = choice(['+', '-', '*'])
