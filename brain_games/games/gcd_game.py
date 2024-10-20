@@ -4,11 +4,10 @@ from typing import Tuple
 
 def find_gcd() -> Tuple[str, int]:
     """function finds the greatest common divisor of two numbers."""
-    first_number = randint(1, 100)
-    second_number = randint(1, 100)
-    expression = f"{first_number} {second_number}"
-    
-    while first_number % second_number != 0:
-        first_number, second_number = second_number, first_number % second_number
-        gcd = second_number
+    number_1 = randint(1, 100)
+    number_2 = randint(1, 100)
+    expression = f"{number_1} {number_2}"
+    while number_1 % number_2 != 0:
+        number_1, number_2 = number_2, number_1 % number_2
+        gcd = number_2
     return expression, gcd
