@@ -15,5 +15,5 @@ def calc() -> Tuple[str, int]:
         case '-':
             answer = first_number - second_number
         case '*':
-            answer = first_number * second_number    
+            answer = first_number * second_number
     return expression, answer

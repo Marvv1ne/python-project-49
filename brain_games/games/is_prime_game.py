@@ -10,6 +10,7 @@ def is_prime(number: int) -> bool:
             return False
     return True
 
+
 def is_prime_game() -> Tuple[int, str]:
     """function return 'yes' if number is prime or return 'no'"""
     number = randint(0, 100)

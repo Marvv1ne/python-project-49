@@ -1,10 +1,12 @@
 from random import randint
 from typing import Tuple
 
-def is_divisible(devidend: int,devider: int):
+
+def is_divisible(devidend: int, devider: int):
     """This function return True if numbers
        are divisible without remainder"""
     return devidend % devider == 0
+
 
 def find_gcd() -> Tuple[str, int]:
     """function finds the greatest common divisor of two numbers."""
