@@ -9,5 +9,11 @@ def calc() -> Tuple[str, int]:
     second_number = randint(0, 100)
     operator = choice(['+', '-', '*'])
     expression = f"{first_number} {operator} {second_number}"
-    answer = eval(f"{first_number} {operator} {second_number}")
+    match operator:
+        case '+':
+            answer = first_number + second_number
+        case '-':
+            answer = first_number - second_number
+        case '*':
+            answer = first_number * second_number    
     return expression, answer
