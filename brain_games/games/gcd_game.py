@@ -15,5 +15,5 @@ def find_gcd() -> Tuple[str, int]:
     expression = f"{number_1} {number_2}"
     while not is_divisible(number_1, number_2):
         number_1, number_2 = number_2, number_1 % number_2
-        gcd = number_2
+    gcd = number_2
     return expression, gcd
