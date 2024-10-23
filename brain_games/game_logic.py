@@ -19,7 +19,6 @@ def game_start(function: Callable, question: str) -> None:
         print(f"Question: {expression}")
         answer = prompt.string("Your answer: ")
         if str(correct_answer) == answer:
-            print(f"Your answer: '{answer}'")
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(.",
