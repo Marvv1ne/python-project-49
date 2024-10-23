@@ -3,7 +3,7 @@ from ..games.prograssion_game import find_lost_element
 
 
 def main() -> str:
-    question = "Find the greatest common divisor of given numbers."
+    question = "What number is missing in the progression?"
     game_start(find_lost_element, question)
 
 
