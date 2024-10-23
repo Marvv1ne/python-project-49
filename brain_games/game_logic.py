@@ -27,4 +27,4 @@ def game_start(function: Callable, question: str) -> None:
             print(f"Let's try again, {name}!")
             break
     else:
-        print(f"Congratulations, {name}")
+        print(f"Congratulations, {name}!")
