@@ -1,5 +1,4 @@
 import prompt
-from .scripts.brain_games import NAME
 from .cli import welcome_user
 from typing import Callable
 
@@ -13,7 +12,7 @@ def game_start(function: Callable, question: str) -> None:
         if the answers to all questions are correct,
         then it print congratulations,
         else print correct answer and invites to play again"""
-    welcome_user(NAME)
+    name = welcome_user()
     print(question)
     for _ in range(NUMBER_OF_QUESTIONS):
         expression, correct_answer = function()
@@ -24,8 +23,8 @@ def game_start(function: Callable, question: str) -> None:
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(.",
-                  f"Correct answer was '{correct_answer}'")
-            print(f"Let's try again, {NAME}!")
+                  f"Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
             break
     else:
-        print(f"Congratulations, {NAME}")
+        print(f"Congratulations, {name}")
